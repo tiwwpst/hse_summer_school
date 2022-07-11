@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:backgroundTint="#050505"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="346dp"
+        android:layout_height="502dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/button12"
+        app:srcCompat="@drawable/screenshot_2022_07_10_at_02_23_02" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="388dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#01A504"
+        android:onClick="onMortyClick"
+        android:text="Morty Smith"
+        android:textSize="20dp"
+        app:cornerRadius="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="388dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#1A42CF"
+        android:text="Rick Sanchez"
+        android:onClick="onRickClick"
+        android:textSize="20dp"
+        app:cornerRadius="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="388dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="248dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#712F2F"
+        android:text="Alan Rails"
+        android:onClick="onAlanClick"
+        android:textSize="20dp"
+        app:cornerRadius="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="388dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="348dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#6C6C6C"
+        android:text="When Wolf"
+        android:onClick="onWhenClick"
+        android:textSize="20dp"
+        app:cornerRadius="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="412dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="@drawable/searchview_background"
+        android:queryHint="Enter character name"
+        android:queryBackground="@android:color/transparent"
+        android:foregroundTint="#F4F0F0"
+        android:iconifiedByDefault="false"
+        android:isScrollContainer="false"
+        app:barrierAllowsGoneWidgets="false"
+        app:chainUseRtl="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
